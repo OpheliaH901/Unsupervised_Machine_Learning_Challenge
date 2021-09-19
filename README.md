@@ -30,7 +30,7 @@
 
 * Creating dummy variables above dramatically increased the number of features in your dataset. Perform dimensionality reduction with PCA. Rather than specify the number of principal components when you instantiate the PCA model, it is possible to state the desired **explained variance**. For example, say that a dataset has 100 features. Using `PCA(n_components=0.99)` creates a model that will preserve approximately 99% of the explained variance, whether that means reducing the dataset to 80 principal components or 3. For this project, preserve 90% of the explained variance in dimensionality reduction. How did the number of the features change?
 
-        ![](images/90_vs_3_codecomments.png)
+       ![](images/90_vs_3_codecomments.png)
 
         When the PCA was set to 0.9, no clusters were formed when attempted the 3-D scatter. 
         Reducing the dataset to 3 principal components, an elbow curve and a scatter containing 3 clusters. 
