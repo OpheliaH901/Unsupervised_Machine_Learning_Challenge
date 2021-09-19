@@ -22,15 +22,15 @@
 
 * Your next step in data preparation is to convert the remaining features with text values, `Algorithm` and `ProofType`, into numerical data. To accomplish this task, use Pandas to create dummy variables. Examine the number of rows and columns of your dataset now. How did they change?
 
+        Dataset went from 4 to 89 columns.
+
 * Standardize your dataset so that columns that contain larger values do not unduly influence the outcome.
 
 ### Dimensionality Reduction
 
 * Creating dummy variables above dramatically increased the number of features in your dataset. Perform dimensionality reduction with PCA. Rather than specify the number of principal components when you instantiate the PCA model, it is possible to state the desired **explained variance**. For example, say that a dataset has 100 features. Using `PCA(n_components=0.99)` creates a model that will preserve approximately 99% of the explained variance, whether that means reducing the dataset to 80 principal components or 3. For this project, preserve 90% of the explained variance in dimensionality reduction. How did the number of the features change?
 
-When the PCA was set to 0.9, no clusters were formed (error received) when attempted the 3-D scatter. Reducing the dataset to 3 principal components, an elbow curve and a scatter containing 3 clusters. 
-
-* Next, further reduce the dataset dimensions with t-SNE and visually inspect the results. In order to accomplish this task, run t-SNE on the principal components: the output of the PCA transformation. Then create a scatter plot of the t-SNE output. Observe whether there are distinct clusters or not.
+        When the PCA was set to 0.9, no clusters were formed (error received) when attempted the 3-D scatter. Reducing the dataset to 3 principal components, an elbow curve and a scatter containing 3 clusters. 
 
 ### Cluster Analysis with k-Means
 
